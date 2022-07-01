@@ -5,8 +5,13 @@ body{
   background-color: #76b852;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
 }
 
+.night{
+  filter: invert(1);
+}
 main{
   width: 360px;
   padding: 8% 0 0;
@@ -69,3 +74,48 @@ form .signup a {
 form .signup a:hover { 
   text-decoration: underline;
 } 
+
+
+
+/* Style NAV */
+
+nav{
+  background-color: #f2f2f2;
+  width: 100%;
+  position: absolute;
+}
+
+.menu-ppal li{
+  float: left; 
+  list-style: none;
+  font-size: 16px;
+  padding: 0 16px 14px;
+}
+
+.services-menu{
+  overflow: hidden;
+}
+.services-menu li{
+  float: none;
+}
+
+.services-menu{ 
+  display: none;
+    position: absolute;
+    left: 100px;
+    background-color: #55853c;
+    color: white;
+    z-index: 1;
+    top: 49px;
+    padding: 10px 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.menu-ppal li:hover .services-menu{
+  display: block; 
+}
+
+a>i{
+  color: wheat;
+  font-size: 30px;
+}
